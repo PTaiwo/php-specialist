@@ -8,7 +8,7 @@
     //Getting element by Tag Name
     $items = $dochtml->getElementByTagName('li');
 
-    //Verifying dtata collected
+    //Verifying data collected
 foreach($items as $item) {
    //gets, and outputs the id and items    
     $cname = $item->nodeValue;
