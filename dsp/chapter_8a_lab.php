@@ -99,6 +99,46 @@ foreach( $student as $key => $values)
     echo $key. ':' .$abc[$key] / count($values);
     print("<br/>");
 }
+
+print("<br/>");
+print("<br/>");
+print("<table>");
+print("<tr>");
+print("<th></th>&nbsp<th>Test1</th>&nbsp<th>Test2</th>&nbsp<th>Test3</th>&nbsp<th>Test4</th>&nbsp<th>Avg.</th>");
+print("</tr>");
+$student = array();
+
+foreach($allTest as $array)
+{
+    foreach($array as $key=>$avg)
+    {    
+    $student[$key][] = $avg;
+    if($key == $key) 
+    {
+        print("<tr>");
+        print("<td>$key</td><td>$avg</td>");
+    }
+        
     
+    if(isset($abc[$key]))  // Prevent index warning
+    {    
+        
+        $abc[$key] += $avg;
+    }
+    else
+    {
+        $abc[$key] = $avg;
+    }
+  }
+}
+
+foreach( $student as $key => $values)
+{
+    //echo $key. ':' .$abc[$key] / count($values);
+//print("<tr>");
+//print("<td>$key</td>&nbsp<td></td>&nbsp<td></td>&nbsp<td></td>&nbsp<td></td>&nbsp<td>$abc[$key]</td>");
+print("</tr>");
+}
+print("</table>");
     
 ?>
