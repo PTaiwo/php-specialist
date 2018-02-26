@@ -48,11 +48,15 @@
 	    $error = 'Error: Column number not filled in.  Defaulted to 8';
         }
         
-        for($row = 1; $row <= $_POST['row']; $row++)
+        for($x = 1; $x <= $row; $x++)
         {
-            echo $row . "<br/>";
-        
+            echo $row . "<br/>";            
+                
         }
+        for($x = 1; $x <= $col; $x++)
+            {
+                echo $col . "<br/>";
+            }
         
         
         ?>
