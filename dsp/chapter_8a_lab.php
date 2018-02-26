@@ -107,16 +107,24 @@ print("<tr>");
 print("<th></th>&nbsp<th>Test1</th>&nbsp<th>Test2</th>&nbsp<th>Test3</th>&nbsp<th>Test4</th>&nbsp<th>Avg.</th>");
 print("</tr>");
 $student = array();
+$cols = 5;
+$i = 0;
 
 foreach($allTest as $array)
 {
     foreach($array as $key=>$avg)
     {    
     $student[$key][] = $avg;
-    if($key == $key) 
-    {
+    $studentName = $key;    
+        
+        
         print("<tr>");
         print("<td>$key</td><td>$avg</td>");
+        $i++;
+    $cols_to_add = $i % $cols;
+    if($cols-to_add == 0){
+        print("</tr>");
+    }
     }
         
     
@@ -130,7 +138,7 @@ foreach($allTest as $array)
         $abc[$key] = $avg;
     }
   }
-}
+//}
 
 foreach( $student as $key => $values)
 {

@@ -30,33 +30,24 @@
     </head>
     <body>
         <h3 align="center">Your Chessboard</h3>
+        
         <?php
-        
         $row = $_REQUEST['row'];
+        if(strlen($row) != 0) {
+	    $row = $_REQUEST['row'];
+        } else {
+	    $row = 8;
+	    $error = 'Error: Row number not filled in.  Defaulted to 8';
+        }
+        
         $col = $_REQUEST['col'];
+        if(strlen($col) != 0) {
+	    $col = $_REQUEST['col'];
+        } else {
+	    $col = 8;
+	    $error = 'Error: Column number not filled in.  Defaulted to 8';
         
-        
-
-        
-        echo "<table class=table>";        
-        for($row = 1; $row <= $_POST['row']; $row++)
-        {
-         echo "<tr>";            
-            for($col = 1; $col <= $_POST['col']; $col++)
-            {
-                $total = $row + $col;
-                if($total % 2 == 0)
-                {
-                    echo "<td class=black></td>";
-                }
-                else
-                {
-                    echo "<td class=white></td>";
-                }
-            }
-            echo "</tr>";
-        }        
-        echo "</table>";
+        }
         
         
         ?>
