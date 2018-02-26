@@ -48,16 +48,25 @@
 	    $error = 'Error: Column number not filled in.  Defaulted to 8';
         }
         
-        for($x = 1; $x <= $row; $x++)
+        echo "<table class=table>";        
+        for($x = 1; $x <= $row; $x++)            
         {
-            echo $row . "<br/>";            
-                
-        }
-        for($x = 1; $x <= $col; $x++)
+         echo "<tr>";            
+            for($y = 1; $y <= $col; $y++)
             {
-                echo $col . "<br/>";
+                $total = $x + $y;
+                if($total % 2 == 0)
+                {
+                    echo "<td class=black></td>";
+                }
+                else
+                {
+                    echo "<td class=white></td>";
+                }
             }
-        
+            echo "</tr>";
+        }        
+        echo "</table>";        
         
         ?>
     </body>
