@@ -46,6 +46,11 @@
         } else {
 	    $col = 8;
 	    $error = 'Error: Column number not filled in.  Defaulted to 8';
+        }
+        
+        for($row = 1; $row <= $_POST['col']; $row++)
+        {
+            echo $row . "<br/>";
         
         }
         
