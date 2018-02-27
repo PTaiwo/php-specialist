@@ -122,7 +122,7 @@ foreach($allTest as $array)
         print("<td>$key</td><td>$avg</td>");
         $i++;
     $cols_to_add = $i % $cols;
-    if($cols-to_add == 0){
+    if($cols_to_add == 0){
         print("</tr>");
     }
     }
