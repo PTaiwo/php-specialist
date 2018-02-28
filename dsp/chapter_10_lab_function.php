@@ -86,7 +86,7 @@
         
         
     } else
-        print("You are missing variables");
+        print("<h3><font color='red'>ERROR: You are missing variables, please complete the entries!!!</font></h3>");
 
     
 ?>
