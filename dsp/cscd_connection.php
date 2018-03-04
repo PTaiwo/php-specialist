@@ -2,7 +2,7 @@
     $server = "localhost";
     $un = "root";
     $password = "patrick";
-    $dbname =  "stickies";
+    $dbname =  "csclassdata";
     
     $connection = new mysqli($server, $un, $password, $dbname);
 
@@ -10,7 +10,7 @@
     {
         die("Connection failed: " . $connection->connect_error);
     }
-    print("Connected to database");
+    //print("Connected to database");
     
     
 ?>
