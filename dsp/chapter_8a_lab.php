@@ -106,18 +106,26 @@ print("<table>");
 print("<tr>");
 print("<th></th>&nbsp<th>Test1</th>&nbsp<th>Test2</th>&nbsp<th>Test3</th>&nbsp<th>Test4</th>&nbsp<th>Avg.</th>");
 print("</tr>");
-print("<tr>");
+
 
 $student = array();
 
 foreach($allTest as $array)
 {
-    foreach($array as $key=>$avg)
-    {    
-    $studentName = $key;
+    //$grade = 0;
+    foreach($array as $key=>$grade)
+    { 
         
-        print $studentName;
-        print("<br/>");
+        print("<tr>");
+        print("<td>$key</td><td>$grade</td>");
+        
+        
+           
+            
+        
+      
+        
+        
     }
     print("</tr>");
 }
