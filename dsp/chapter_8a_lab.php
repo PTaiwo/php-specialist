@@ -115,6 +115,7 @@ foreach($allTest as $array)
     //$grade = 0;
     foreach($array as $key=>$grade)
     { 
+        $studentName = $key;
         
         print("<tr>");
         print("<td>$key</td><td>$grade</td>");

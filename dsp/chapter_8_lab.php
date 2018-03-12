@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>Computer List</title>
+        
     </head>
     <body>
         <h1>List of Computers</h1>
         <h3>Add or Delete computers from the list.</h3>
         <form action="addDelComputer.php" method="post">
-            <ul id="computerList">
+            <ul name="computerList">
                 <li>Commodore 64 &nbsp;<button type="submit" name="delete">Delete</button></li>
                 <br/>
                 <li>ZX Spectrum &nbsp;<button type="submit" name="delete">Delete</button></li>
