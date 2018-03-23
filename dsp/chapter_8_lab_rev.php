@@ -16,20 +16,23 @@
     {
         //$out += $computers[$i];
         //$out = " <button>Delete</button> <br/>";
-        print $computers[$i] . ' <button type="submit" name="delete" value="$computers[$i]">Delete</button><br/>';
+        print $computers[$i] . ' <button type="submit" name="delete" value="delete">Delete</button><br/>';
         print "<br/>";
     }
     print "<br/>";
-    print '<input type="text" name="add" placeholder="Add a Computer"> <button type="submit">Add</button>';
+    print '<input type="text" name="add" placeholder="Add a Computer"> <button type="submit" name="add" value="add">Add</button>';
     print "</form>";
 
     // Process the form action
     if(isset($_POST['delete']))
     {
         
-        unset ($computers[$i]);
+        unset($computers[$i]);
     }  
-    
+    else
+    {
+        //$computers[] = $_POST['add'];
+    }
 
     //print($out);
         
