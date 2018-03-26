@@ -1,7 +1,7 @@
 <?php
     $server = "localhost";
     $un = "root";
-    $password = "patrick";
+    $password = "";
     $dbname =  "csclassdata";
     
     $connection = new mysqli($server, $un, $password, $dbname);
